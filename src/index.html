@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <title>OhMyFood</title>
   </head>
   <body>
-    <header><h1 class="main-logo">ohmyfood</h1></header>
+    <header class="header"><h1 class="header__logo">ohmyfood</h1></header>
     <main>
       <section class="hero">
         <div class="hero__location">
@@ -22,9 +22,9 @@
           <p class="hero__presentation-text">
             Découvrez des restaurants d'exception, séléctionnés par nos soins.
           </p>
-          <button class="hero__presentation-btn">
+          <a href="#restaurants" class="hero__presentation-btn">
             Explorer nos restaurants
-          </button>
+          </a>
         </div>
       </section>
       <section class="fonctionnement">
@@ -47,11 +47,11 @@
           </div>
         </div>
       </section>
-      <section class="restaurants">
+      <section class="restaurants" id="restaurants">
         <h2 class="restaurants-title">Restaurants</h2>
         <div class="restaurants__wrapper">
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
+          <a href="la-palette-du-gout.html" class="restaurants-card">
+            <img class="card__img" src="assets/la-palette-du-gout.jpg" alt="" />
             <p class="card__labelnew">Nouveau</p>
             <div class="card__wrapper">
               <div class="card__infos">
@@ -60,9 +60,9 @@
               </div>
               <p class="card__heart">Heart</p>
             </div>
-          </div>
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
+          </a>
+          <a href="la-note-enchantee.html" class="restaurants-card">
+            <img class="card__img" src="assets/la-note-enchantee.jpg" alt="" />
             <p class="card__labelnew">Nouveau</p>
             <div class="card__wrapper">
               <div class="card__infos">
@@ -71,9 +71,9 @@
               </div>
               <p class="card__heart">Heart</p>
             </div>
-          </div>
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
+          </a>
+          <a href="a-la-francaise.html" class="restaurants-card">
+            <img class="card__img" src="assets/a-la-francaise.jpg" alt="" />
             <div class="card__wrapper">
               <div class="card__infos">
                 <h3 class="card__title">À la française</h3>
@@ -81,9 +81,9 @@
               </div>
               <p class="card__heart">Heart</p>
             </div>
-          </div>
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
+          </a>
+          <a href="le-delice-des-sens.html" class="restaurants-card">
+            <img class="card__img" src="assets/le-delice-des-sens.jpg" alt="" />
             <div class="card__wrapper">
               <div class="card__infos">
                 <h3 class="card__title">Le délice des sens</h3>
@@ -91,23 +91,23 @@
               </div>
               <p class="card__heart">Heart</p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <h2 class="footer__title">ohmyfood</h2>
-        <div class="footer__box">
+        <a href="" class="footer__box">
           <p class="footer__icon">icon</p>
           <p class="footer__link">Proposer un restaurant</p>
-        </div>
-        <div class="footer__box">
+        </a>
+        <a href="" class="footer__box">
           <p class="footer__icon">icon</p>
           <p class="footer__link">Devenir partenaire</p>
-        </div>
-        <p class="footer__link">Mentions légales</p>
-        <p class="footer__link">Contact</p>
+        </a>
+        <a href=""><p class="footer__link">Mentions légales</p></a>
+        <a href=""><p class="footer__link">Contact</p></a>
       </div>
     </footer>
   </body>

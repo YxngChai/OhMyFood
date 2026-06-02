@@ -7,5 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 
 .DS_Store
+src/.DS_Store
+src/assets/.DS_Store
 
 instructions.txt
