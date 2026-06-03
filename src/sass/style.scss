@@ -1,13 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
 
-$logo-font: "Shrikhand";
-$text-font: "Roboto";
+$logo-font: "Shrikhand", sans-serif;
+$main-font: "Roboto", sans-serif;
 
-$primary-color: #9356dc;
-$secondary-color: #ff79da;
-$tertiary-color: #99e2d0;
+$colors: (
+  primary: #9356dc,
+  secondary: #ff79da,
+  tertiary: #99e2d0,
+  background-light: #ffffff,
+  background-lightgrey: #f5f5f5,
+  background-grey: #e7e7e7,
+  background-black: #000000,
+  background-darkgrey: #2f2f2f,
+);
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
-  background-color: rgb(127, 187, 255);
-  font-family: $text-font;
+  background-color: map-get($colors, primary);
+  font-family: $main-font;
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+input,
+textarea,
+select,
+button {
+  font: inherit;
 }

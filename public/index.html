@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <title>OhMyFood</title>
   </head>
   <body>
-    <header><h1 class="main-logo">ohmyfood</h1></header>
+    <header class="header"><h1 class="header__brand-logo">ohmyfood</h1></header>
     <main>
       <section class="hero">
         <div class="hero__location">
@@ -22,92 +22,126 @@
           <p class="hero__presentation-text">
             Découvrez des restaurants d'exception, séléctionnés par nos soins.
           </p>
-          <button class="hero__presentation-btn">
+          <a href="#restaurants" class="hero__presentation-btn">
             Explorer nos restaurants
-          </button>
+          </a>
         </div>
       </section>
       <section class="fonctionnement">
         <h2 class="fonctionnement__title">Fonctionnement</h2>
         <div class="fonctionnement__wrapper">
-          <div class="fonctionnement__step">
-            <p class="fonctionnement__number">1</p>
-            <p class="fonctionnement__icon">icon</p>
-            <p class="fonctionnement__text">Choisissez un restaurant</p>
-          </div>
-          <div class="fonctionnement__step">
-            <p class="fonctionnement__number">2</p>
-            <p class="fonctionnement__icon">icon</p>
-            <p class="fonctionnement__text">Composez votre menu</p>
-          </div>
-          <div class="fonctionnement__step">
-            <p class="fonctionnement__number">3</p>
-            <p class="fonctionnement__icon">icon</p>
-            <p class="fonctionnement__text">Dégustez au restaurant</p>
-          </div>
+          <ol class="fonctionnement__steps">
+            <li class="fonctionnement__step">
+              <span class="fonctionnement__number">1</span>
+              <span class="fonctionnement__icon">icon</span>
+              <span class="fonctionnement__text">Choisissez un restaurant</span>
+            </li>
+            <li class="fonctionnement__step">
+              <span class="fonctionnement__number">2</span>
+              <span class="fonctionnement__icon">icon</span>
+              <span class="fonctionnement__text">Composez votre menu</span>
+            </li>
+            <li class="fonctionnement__step">
+              <span class="fonctionnement__number">3</span>
+              <span class="fonctionnement__icon">icon</span>
+              <span class="fonctionnement__text">Dégustez au restaurant</span>
+            </li>
+          </ol>
         </div>
       </section>
-      <section class="restaurants">
+      <section class="restaurants" id="restaurants">
         <h2 class="restaurants-title">Restaurants</h2>
         <div class="restaurants__wrapper">
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
-            <p class="card__labelnew">Nouveau</p>
+          <a href="la-palette-du-gout.html" class="restaurants-card">
+            <img
+              class="card__img"
+              src="assets/la-palette-du-gout.jpg"
+              alt="assiette du restaurant gastronomique la palette du gout" />
+            <span class="card__labelnew">Nouveau</span>
             <div class="card__wrapper">
               <div class="card__infos">
                 <h3 class="card__title">La palette du goût</h3>
                 <p class="card__location">Ménilmontant</p>
               </div>
-              <p class="card__heart">Heart</p>
+              <button class="card__heart" aria-label="Ajouter aux favoris">
+                ♡
+              </button>
             </div>
-          </div>
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
-            <p class="card__labelnew">Nouveau</p>
+          </a>
+          <a href="la-note-enchantee.html" class="restaurants-card">
+            <img
+              class="card__img"
+              src="assets/la-note-enchantee.jpg"
+              alt="vue par dessus d'un menu entrée, plat, corbeill de pain et cockail" />
+            <span class="card__labelnew">Nouveau</span>
             <div class="card__wrapper">
               <div class="card__infos">
                 <h3 class="card__title">La note enchantée</h3>
                 <p class="card__location">Charonne</p>
               </div>
-              <p class="card__heart">Heart</p>
+              <button class="card__heart" aria-label="Ajouter aux favoris">
+                ♡
+              </button>
             </div>
-          </div>
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
+          </a>
+          <a href="a-la-francaise.html" class="restaurants-card">
+            <img
+              class="card__img"
+              src="assets/a-la-francaise.jpg"
+              alt="assiette et café du restaurant à la française" />
             <div class="card__wrapper">
               <div class="card__infos">
                 <h3 class="card__title">À la française</h3>
                 <p class="card__location">Cité Rouge</p>
               </div>
-              <p class="card__heart">Heart</p>
+              <button class="card__heart" aria-label="Ajouter aux favoris">
+                ♡
+              </button>
             </div>
-          </div>
-          <div class="restaurants-card">
-            <img class="card__img" src="restaurant/image.png" alt="" />
+          </a>
+          <a href="le-delice-des-sens.html" class="restaurants-card">
+            <img
+              class="card__img"
+              src="assets/le-delice-des-sens.jpg"
+              alt="assiette de poisson dans une assiette au design exotique" />
             <div class="card__wrapper">
               <div class="card__infos">
                 <h3 class="card__title">Le délice des sens</h3>
                 <p class="card__location">Folie-Méricourt</p>
               </div>
-              <p class="card__heart">Heart</p>
+              <button class="card__heart" aria-label="Ajouter aux favoris">
+                ♡
+              </button>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
         <h2 class="footer__title">ohmyfood</h2>
-        <div class="footer__box">
-          <p class="footer__icon">icon</p>
-          <p class="footer__link">Proposer un restaurant</p>
-        </div>
-        <div class="footer__box">
-          <p class="footer__icon">icon</p>
-          <p class="footer__link">Devenir partenaire</p>
-        </div>
-        <p class="footer__link">Mentions légales</p>
-        <p class="footer__link">Contact</p>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__box footer__link">
+                <span class="footer__icon">icon</span>
+                Proposer un restaurant
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__box footer__link">
+                <span class="footer__icon">icon</span>
+                Devenir partenaire
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Mentions légales</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </footer>
   </body>
