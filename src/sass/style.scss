@@ -1,26 +1,26 @@
+//variables
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap");
 
 $logo-font: "Shrikhand", sans-serif;
 $main-font: "Roboto", sans-serif;
 
-$colors: (
-  primary: #9356dc,
-  secondary: #ff79da,
-  tertiary: #99e2d0,
-  background-light: #ffffff,
-  background-lightgrey: #f5f5f5,
-  background-grey: #e7e7e7,
-  background-black: #000000,
-  background-darkgrey: #2f2f2f,
-);
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-white: #ffffff;
+$color-darkwhite: #f5f5f5;
+$color-grey: #e7e7e7;
+$color-darkgrey: #2f2f2f;
+$color-black: #111111;
 
+// default reset
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 body {
-  background-color: map-get($colors, primary);
   font-family: $main-font;
   margin: 0;
 }
@@ -46,4 +46,66 @@ textarea,
 select,
 button {
   font: inherit;
+}
+
+//sections
+
+.header {
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  box-shadow: 0 0px 4px $color-darkgrey;
+  position: relative;
+
+  &__brand-logo {
+    font-family: $logo-font;
+  }
+}
+.hero {
+  background-color: $color-darkwhite;
+
+  &__location {
+    background-color: $color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    font-size: 1.2em;
+    gap: 15px;
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+.fonctionnement {
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+.restaurants {
+  background-color: $color-darkwhite;
+}
+.card {
+  &__heart-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+.footer {
+  background-color: $color-darkgrey;
+  color: $color-white;
+
+  &__title {
+    font-family: $logo-font;
+  }
+  &__icon {
+    width: 15px;
+    height: 15px;
+    color: $color-white;
+  }
 }

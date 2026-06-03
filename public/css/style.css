@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: #9356dc;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
@@ -36,4 +35,61 @@ textarea,
 select,
 button {
   font: inherit;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  box-shadow: 0 0px 4px #2f2f2f;
+  position: relative;
+}
+.header__brand-logo {
+  font-family: "Shrikhand", sans-serif;
+}
+
+.hero {
+  background-color: #f5f5f5;
+}
+.hero__location {
+  background-color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  font-size: 1.2em;
+  gap: 15px;
+}
+.hero__location-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.fonctionnement__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.restaurants {
+  background-color: #f5f5f5;
+}
+
+.card__heart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+.footer__title {
+  font-family: "Shrikhand", sans-serif;
+}
+.footer__icon {
+  width: 15px;
+  height: 15px;
+  color: #ffffff;
 }
