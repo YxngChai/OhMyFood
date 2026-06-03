@@ -20,6 +20,16 @@ $color-black: #111111;
 *::after {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
 body {
   font-family: $main-font;
   margin: 0;
@@ -55,12 +65,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75px;
+  height: 85px;
   box-shadow: 0 0px 4px $color-darkgrey;
   position: relative;
 
   &__brand-logo {
     font-family: $logo-font;
+    font-size: 2.2em;
   }
 }
 .hero {
@@ -78,6 +89,32 @@ button {
     &-icon {
       width: 20px;
       height: 20px;
+    }
+  }
+  &__presentation {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px 40px 40px;
+
+    &-title {
+      font-size: 2em;
+    }
+
+    &-text {
+      font-size: 1.3em;
+    }
+
+    &-btn {
+      font-size: 1.2em;
+      color: $color-white;
+      background: linear-gradient(to bottom, $color-secondary, $color-primary);
+      border-radius: 50px;
+      padding: 18px 25px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.362);
     }
   }
 }
