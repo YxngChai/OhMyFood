@@ -63,6 +63,9 @@ select,
 button {
   font: inherit;
 }
+p {
+  margin: 0;
+}
 
 //sections
 
@@ -96,13 +99,13 @@ button {
   }
   &__presentation {
     background-color: $color-darkwhite;
-    height: 350px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 40px 40px 40px;
+    gap: 40px;
+    padding: 60px 40px;
 
     &-title {
       font-size: 2em;
@@ -186,50 +189,78 @@ button {
   background-color: $color-darkwhite;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: auto;
+  &__title {
+    font-weight: 700;
+    font-size: 2.1em;
+    margin: 60px 0 30px 30px;
+  }
+
   &__wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 155px;
-    border: 1px saddlebrown solid;
+    gap: 30px;
+    // border: 1px saddlebrown solid;
+    margin-bottom: 80px;
   }
 }
 
 .card {
-  border: 1px solid rgb(207, 39, 5);
-  border-radius: 15px;
-  height: 300px;
-  width: 400px;
-  background-color: #9356dc;
+  // border: 1px solid rgb(81, 205, 4);
+  border-radius: 25px;
+  // height: 340px;
+  width: 90vw;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba($color-darkgrey, 0.2);
 
   &__labelnew {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 15px;
+    top: 15px;
     background-color: $color-tertiary;
     color: $color-tertiaryDark;
     padding: 8px 10px;
+    font-size: 1.2em;
   }
+
   &__img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     display: block;
     overflow: hidden;
-    border-radius: 15px;
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    // border: 1px solid peru;
+  }
+  &__infos {
+    // border: 1px solid rgb(151, 4, 177);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  &__location {
+    font-size: 1.5em;
+    margin: 0;
   }
 
-  & &__heart-icon {
-    @include icon();
+  &__heart-icon {
+    // border: 1px solid palegreen;
+    fill: $color-black;
+    height: 45px;
+    margin-right: 30px;
   }
 }
 .footer {
