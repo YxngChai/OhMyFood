@@ -352,6 +352,14 @@ p {
     font-family: $logo-font;
     font-size: 1.6em;
   }
+  &__sections {
+    @media (min-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+  }
   &__section {
     padding: 15px;
   }
@@ -377,23 +385,29 @@ p {
     flex-direction: column;
     gap: 20px;
   }
+  &__text {
+    flex: 1;
+    min-width: 0;
+  }
   &__validation-tick {
+    flex: 0 0 60px;
+    margin-right: -60px;
     width: 0;
     background-color: $color-tertiary;
     display: flex;
     align-items: center;
     justify-content: center;
     // transform: translateX(100%);
-    transition: width 0.3s ease;
+    transition: margin-right 0.5s ease;
     &-icon {
       width: 25px;
       transform: rotate(180deg);
-      transition: transform 0.3s ease;
+      transition: transform 0.7s ease;
     }
   }
   &__item {
     &:hover .menu__validation-tick {
-      width: 60px;
+      margin-right: 0;
     }
     &:hover .menu__validation-tick-icon {
       transform: rotate(0deg);
@@ -410,7 +424,7 @@ p {
     &:nth-child(3) {
       animation-delay: 0.3s;
     }
-
+    // max-width: 280px;
     background-color: $color-white;
     box-shadow: 2px 2px 7px rgba($color-darkgrey, 0.2);
     border-radius: 15px;

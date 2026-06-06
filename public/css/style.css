@@ -311,6 +311,14 @@ p {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.6em;
 }
+@media (min-width: 900px) {
+  .menu__sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-items: start;
+  }
+}
 .menu__section {
   padding: 15px;
 }
@@ -335,21 +343,27 @@ p {
   flex-direction: column;
   gap: 20px;
 }
+.menu__text {
+  flex: 1;
+  min-width: 0;
+}
 .menu__validation-tick {
+  flex: 0 0 60px;
+  margin-right: -60px;
   width: 0;
   background-color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: width 0.3s ease;
+  transition: margin-right 0.5s ease;
 }
 .menu__validation-tick-icon {
   width: 25px;
   transform: rotate(180deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
 }
 .menu__item:hover .menu__validation-tick {
-  width: 60px;
+  margin-right: 0;
 }
 .menu__item:hover .menu__validation-tick-icon {
   transform: rotate(0deg);
