@@ -52,6 +52,46 @@ p {
   margin: 0;
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 0.6s ease 3s forwards;
+}
+
+.loader {
+  width: 250px;
+  aspect-ratio: 2;
+  --_f: no-repeat radial-gradient(circle closest-side, #9356dc 90%, #0000);
+  --_g: no-repeat radial-gradient(circle closest-side, #ff79da 90%, #0000);
+  --_h: no-repeat radial-gradient(circle closest-side, #99e2d0 90%, #0000);
+  background: var(--_f) 0% 50%, var(--_g) 50% 50%, var(--_h) 100% 50%;
+  background-size: 33.3333333333% 50%;
+  animation: l3 1s infinite linear;
+}
+
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
 .header {
   background-color: #ffffff;
   display: flex;
@@ -496,5 +536,11 @@ p {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
