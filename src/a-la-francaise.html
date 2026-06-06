@@ -6,7 +6,7 @@
     <title>À la française</title>
     <link rel="stylesheet" href="/public/css/style.css" />
   </head>
-  <body>
+  <body class="menu__body">
     <header class="header">
       <nav class="header__navigation"><a href="index.html"><svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path  fill="rgb(0, 0, 0)" d="M41.4 297.4C28.9 309.9 28.9 330.2 41.4 342.7L169.4 470.7C181.9 483.2 202.2 483.2 214.7 470.7C227.2 458.2 227.2 437.9 214.7 425.4L141.3 352L576 352C593.7 352 608 337.7 608 320C608 302.3 593.7 288 576 288L141.3 288L214.7 214.6C227.2 202.1 227.2 181.8 214.7 169.3C202.2 156.8 181.9 156.8 169.4 169.3L41.4 297.3z"/></svg></a></nav>
       <span class="header__brand-logo">ohmyfood</span>
@@ -20,7 +20,7 @@
       <section class="menu">
         <div class="menu__header">
         <h1 class="menu__title">À la française</h1>
-        <div class="menu__heart">
+        <div class="menu__heart" title="Ajouter aux favoris">
          <svg
                   class="menu__heart-icon menu__heart-icon--empty"
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,30 +51,35 @@
           <ul class="menu__items">
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Tartare de pouple acidulé</h3>
                 <p class="menu__item-description">Aux Zests d'orange</p>
+                </div>
                 <span class="menu__item-price">25€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Velouté de légumes d'antan</h3>
-                <p class="menu__item-description">
-                  Carotte, panais, topinambour
-                </p>
+                <p class="menu__item-description">Carotte, panais, topinambour</p>
+                </div>
                 <span class="menu__item-price">35€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Soupe à l'oignon</h3>
                 <p class="menu__item-description">Revisitée</p>
+                </div>
                 <span class="menu__item-price">20€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
+            
           </ul>
         </section>
         <section class="menu__section">
@@ -82,37 +87,39 @@
             <h2 class="menu__category-name">PLATS</h2>
             <div class="menu__category-underline"></div>
           </header>
+          
           <ul class="menu__items">
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Coquilles Saint-Jacques</h3>
-                <p class="menu__item-description">
-                  Accompagnées d'une purée de panais
-                </p>
+                <p class="menu__item-description">Accompagnées d'une purée de panais</p>
+                </div>
                 <span class="menu__item-price">40€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Margret de canard</h3>
-                <p class="menu__item-description">
-                  Et parmentier de pommes de terres
-                </p>
+                <p class="menu__item-description">Et parmentier de pommes de terres</p>
+                </div>
                 <span class="menu__item-price">35€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Pigeonneau d'Ille-et-Vilaine</h3>
-                <p class="menu__item-description">
-                  Sur son lit de gnocchis aux légumes
-                </p>
+                <p class="menu__item-description">Sur son lit de gnocchis aux légumes</p>
+                </div>
                 <span class="menu__item-price">44€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
+            
           </ul>
         </section>
         <section class="menu__section">
@@ -123,27 +130,33 @@
           <ul class="menu__items">
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Pétales de violetes glacés</h3>
                 <p class="menu__item-description">Et purée de noisettes</p>
+                </div>
                 <span class="menu__item-price">18€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Fondant au chocolat</h3>
                 <p class="menu__item-description">Revisité</p>
+                </div>
                 <span class="menu__item-price">22€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
             <li class="menu__item">
               <div class="menu__item-wrapper">
+                <div class="menu__text">
                 <h3 class="menu__item-name">Millefeuille croustillant</h3>
                 <p class="menu__item-description">Myrtilles et pâte d'amande</p>
+                </div>
                 <span class="menu__item-price">23€</span>
               </div>
-              <div class="menu__validation-tick">✔</div>
+              <div class="menu__validation-tick"><svg class="menu__validation-tick-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="rgb(255, 255, 255)" d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z"/></svg></div>
             </li>
           </ul>
         </section>

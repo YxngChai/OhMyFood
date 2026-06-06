@@ -170,7 +170,7 @@ p {
     background-color: $color-darkwhite;
     border-radius: 25px;
     box-shadow: 2px 2px 10px rgba($color-darkgrey, 0.4);
-    padding: 30px 0;
+    padding: 30px 20px 30px 0;
     font-size: 1.2em;
     display: flex;
     align-items: center;
@@ -232,9 +232,7 @@ p {
 }
 
 .card {
-  // border: 1px solid rgb(81, 205, 4);
   border-radius: 25px;
-  // height: 340px;
   width: 90vw;
   background-color: $color-white;
   display: flex;
@@ -264,10 +262,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // border: 1px solid peru;
   }
   &__infos {
-    // border: 1px solid rgb(151, 4, 177);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -285,19 +281,16 @@ p {
     position: relative;
     width: 40px;
     height: 40px;
-    // border: #197a5b solid 1px;
     margin-right: 20px;
   }
 
   &__heart-icon {
-    // border: 1px solid palegreen;
     position: absolute;
 
     inset: 0;
     width: 100%;
     height: 100%;
     fill: $color-black;
-    // height: 45px;
     margin-right: 30px;
   }
   &__heart-icon--empty {
@@ -313,11 +306,14 @@ p {
   }
 }
 .menu {
-  background-color: $color-white;
+  background-color: $color-darkwhite;
   position: relative;
   top: -40px;
   border-radius: 35px;
-
+  margin-bottom: 30px;
+  &__body {
+    background-color: $color-darkwhite;
+  }
   &__header {
     display: flex;
     justify-content: space-between;
@@ -375,6 +371,112 @@ p {
       background-color: $color-tertiary;
     }
   }
+  &__items {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__validation-tick {
+    width: 0;
+    background-color: $color-tertiary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transform: translateX(100%);
+    transition: width 0.3s ease;
+    &-icon {
+      width: 25px;
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+  }
+  &__item {
+    &:hover .menu__validation-tick {
+      width: 60px;
+    }
+    &:hover .menu__validation-tick-icon {
+      transform: rotate(0deg);
+    }
+    opacity: 0;
+    transform: translateY(10px);
+    animation: itemFade 1.5s ease forwards;
+    &:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    background-color: $color-white;
+    box-shadow: 2px 2px 7px rgba($color-darkgrey, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    &-name {
+      font-weight: 500;
+      margin-bottom: 6px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &-description {
+      font-size: 0.8em;
+      font-weight: 200;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    &-price {
+      font-weight: 700;
+      font-size: 0.9em;
+      display: block;
+      display: flex;
+      justify-content: end;
+      flex-direction: column;
+      margin-right: 10px;
+    }
+    &-wrapper {
+      // border: #197a5b solid 1px;
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      min-width: 0;
+      position: relative;
+      padding: 12px 10px;
+    }
+  }
+
+  &__order {
+    display: flex;
+    justify-content: center;
+
+    &-btn {
+      font-size: 0.9em;
+      color: $color-white;
+      background: linear-gradient(to bottom, $color-secondary, $color-primary);
+      border-radius: 50px;
+      padding: 12px 40px;
+      margin-top: 30px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.362);
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px 10px rgba($color-darkgrey, 0.9);
+        background: linear-gradient(
+          to bottom,
+          rgba($color-secondary, 0.9),
+          rgba($color-primary, 0.9)
+        );
+      }
+    }
+  }
 }
 .footer {
   background-color: $color-darkgrey;
@@ -403,5 +505,12 @@ p {
     height: 15px;
     color: $color-white;
     margin-right: 10px;
+  }
+}
+
+@keyframes itemFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
