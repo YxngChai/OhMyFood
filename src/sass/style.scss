@@ -504,7 +504,9 @@ p {
     &:nth-child(3) {
       animation-delay: 0.3s;
     }
-    // max-width: 280px;
+    &:nth-child(4) {
+      animation-delay: 0.4s;
+    }
     background-color: $color-white;
     box-shadow: 2px 2px 7px rgba($color-darkgrey, 0.2);
     border-radius: 15px;

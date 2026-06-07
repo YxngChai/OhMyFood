@@ -459,6 +459,9 @@ p {
 .menu__item:nth-child(3) {
   animation-delay: 0.3s;
 }
+.menu__item:nth-child(4) {
+  animation-delay: 0.4s;
+}
 .menu__item {
   background-color: #ffffff;
   box-shadow: 2px 2px 7px rgba(47, 47, 47, 0.2);
