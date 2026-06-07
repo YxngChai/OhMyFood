@@ -329,11 +329,11 @@ p {
   fill: black;
 }
 .card__heart-icon--filled {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.7s ease;
 }
 .card__heart:hover .card__heart-icon--filled {
-  opacity: 1;
+  clip-path: inset(0 0 0 0);
 }
 
 .menu {
@@ -372,11 +372,11 @@ p {
   fill: black;
 }
 .menu__heart-icon--filled {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 0.7s ease;
 }
 .menu__heart:hover .menu__heart-icon--filled {
-  opacity: 1;
+  clip-path: inset(0 0 0 0);
 }
 .menu__title {
   font-family: "Shrikhand", sans-serif;
