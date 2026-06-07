@@ -9,9 +9,9 @@
   <body>
     <header class="header"><h1 class="header__brand-logo">ohmyfood</h1></header>
     <main>
-      <section class="overlay">
+      <!-- <section class="overlay">
         <div class="loader"></div>
-      </section>
+      </section> -->
       <section class="hero">
         <div class="hero__location">
           <span>
@@ -93,160 +93,168 @@
       <section class="restaurants" id="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="restaurants__wrapper">
-          <a href="la-palette-du-gout.html" class="card restaurants-card">
-            <img
-              class="card__img"
-              src="assets/la-palette-du-gout.jpg"
-              alt="assiette du restaurant gastronomique la palette du gout"
-              loading="lazy" />
-            <span class="card__labelnew">Nouveau</span>
-            <div class="card__wrapper">
-              <div class="card__infos">
-                <h3 class="card__title">La palette du goût</h3>
-                <p class="card__location">Ménilmontant</p>
+          <article class="card restaurants-card">
+            <a href="la-palette-du-gout.html" class="card__link">
+              <img
+                class="card__img"
+                src="assets/la-palette-du-gout.jpg"
+                alt="assiette du restaurant gastronomique la palette du gout"
+                loading="lazy" />
+              <span class="card__labelnew">Nouveau</span>
+              <div class="card__wrapper">
+                <div class="card__infos">
+                  <h3 class="card__title">La palette du goût</h3>
+                  <p class="card__location">Ménilmontant</p>
+                </div>
               </div>
-              <button
-                class="card__heart"
-                aria-label="Ajouter la palette du goût aux favoris"
-                aria-pressed="false">
-                <svg
-                  aria-hidden="true"
-                  class="card__heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
-                </svg>
-                <svg
-                  class="card__heart-icon card__heart-icon--filled"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <defs>
-                    <linearGradient
-                      id="heartGradient"
-                      x1="0%"
-                      y1="0%"
-                      x2="0%"
-                      y2="100%">
-                      <stop offset="0%" stop-color="#9356dc" />
-                      <stop offset="100%" stop-color="#ff79da" />
-                    </linearGradient>
-                  </defs>
+            </a>
+            <button
+              class="card__heart"
+              aria-label="Ajouter la palette du goût aux favoris"
+              aria-pressed="false">
+              <svg
+                aria-hidden="true"
+                class="card__heart-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
+              </svg>
+              <svg
+                class="card__heart-icon card__heart-icon--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <defs>
+                  <linearGradient
+                    id="heartGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="0%"
+                    y2="100%">
+                    <stop offset="0%" stop-color="#9356dc" />
+                    <stop offset="100%" stop-color="#ff79da" />
+                  </linearGradient>
+                </defs>
 
-                  <path
-                    fill="url(#heartGradient)"
-                    d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
-                </svg>
-              </button>
-            </div>
-          </a>
-          <a href="la-note-enchantee.html" class="card restaurants-card">
-            <img
-              class="card__img"
-              src="assets/la-note-enchantee.jpg"
-              alt="vue par dessus d'un menu entrée, plat, corbeill de pain et cockail"
-              loading="lazy" />
-            <span class="card__labelnew">Nouveau</span>
-            <div class="card__wrapper">
-              <div class="card__infos">
-                <h3 class="card__title">La note enchantée</h3>
-                <p class="card__location">Charonne</p>
+                <path
+                  fill="url(#heartGradient)"
+                  d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+              </svg>
+            </button>
+          </article>
+          <article class="card restaurant-card">
+            <a href="la-note-enchantee.html" class="card__link">
+              <img
+                class="card__img"
+                src="assets/la-note-enchantee.jpg"
+                alt="vue par dessus d'un menu entrée, plat, corbeill de pain et cockail"
+                loading="lazy" />
+              <span class="card__labelnew">Nouveau</span>
+              <div class="card__wrapper">
+                <div class="card__infos">
+                  <h3 class="card__title">La note enchantée</h3>
+                  <p class="card__location">Charonne</p>
+                </div>
               </div>
-              <button
-                class="card__heart"
-                aria-label="Ajouter la note enchantée aux favoris"
-                aria-pressed="false">
-                <svg
-                  aria-hidden="true"
-                  class="card__heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
-                </svg>
-                <svg
-                  class="card__heart-icon card__heart-icon--filled"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    fill="url(#heartGradient)"
-                    d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
-                </svg>
-              </button>
-            </div>
-          </a>
-          <a href="a-la-francaise.html" class="card restaurants-card">
-            <img
-              class="card__img"
-              src="assets/a-la-francaise.jpg"
-              alt="assiette et café du restaurant à la française"
-              loading="lazy" />
-            <div class="card__wrapper">
-              <div class="card__infos">
-                <h3 class="card__title">À la française</h3>
-                <p class="card__location">Cité Rouge</p>
+            </a>
+            <button
+              class="card__heart"
+              aria-label="Ajouter la note enchantée aux favoris"
+              aria-pressed="false">
+              <svg
+                aria-hidden="true"
+                class="card__heart-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
+              </svg>
+              <svg
+                class="card__heart-icon card__heart-icon--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  fill="url(#heartGradient)"
+                  d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+              </svg>
+            </button>
+          </article>
+          <article class="card restaurant-card">
+            <a href="a-la-francaise.html" class="card__link">
+              <img
+                class="card__img"
+                src="assets/a-la-francaise.jpg"
+                alt="assiette et café du restaurant à la française"
+                loading="lazy" />
+              <div class="card__wrapper">
+                <div class="card__infos">
+                  <h3 class="card__title">À la française</h3>
+                  <p class="card__location">Cité Rouge</p>
+                </div>
               </div>
-              <button
-                class="card__heart"
-                aria-label="Ajouter à la française aux favoris"
-                aria-pressed="false">
-                <svg
-                  aria-hidden="true"
-                  class="card__heart-icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
-                </svg>
-                <svg
-                  class="card__heart-icon card__heart-icon--filled"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    fill="url(#heartGradient)"
-                    d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
-                </svg>
-              </button>
-            </div>
-          </a>
-          <a href="le-delice-des-sens.html" class="card restaurants-card">
-            <img
-              class="card__img"
-              src="assets/le-delice-des-sens.jpg"
-              alt="assiette de poisson dans une assiette au design exotique"
-              loading="lazy" />
-            <div class="card__wrapper">
-              <div class="card__infos">
-                <h3 class="card__title">Le délice des sens</h3>
-                <p class="card__location">Folie-Méricourt</p>
+            </a>
+            <button
+              class="card__heart"
+              aria-label="Ajouter à la française aux favoris"
+              aria-pressed="false">
+              <svg
+                aria-hidden="true"
+                class="card__heart-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
+              </svg>
+              <svg
+                class="card__heart-icon card__heart-icon--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  fill="url(#heartGradient)"
+                  d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+              </svg>
+            </button>
+          </article>
+          <article class="card restaurant-card">
+            <a href="le-delice-des-sens.html" class="card__link">
+              <img
+                class="card__img"
+                src="assets/le-delice-des-sens.jpg"
+                alt="assiette de poisson dans une assiette au design exotique"
+                loading="lazy" />
+              <div class="card__wrapper">
+                <div class="card__infos">
+                  <h3 class="card__title">Le délice des sens</h3>
+                  <p class="card__location">Folie-Méricourt</p>
+                </div>
               </div>
-              <button
-                class="card__heart"
-                aria-label="Ajouter le délice des sens aux favoris"
-                aria-pressed="false">
-                <svg
-                  aria-hidden="true"
-                  class="card__heart-icon card__heart-icon--empty"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
-                </svg>
-                <svg
-                  class="card__heart-icon card__heart-icon--filled"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640">
-                  <path
-                    fill="url(#heartGradient)"
-                    d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
-                </svg>
-              </button>
-            </div>
-          </a>
+            </a>
+            <button
+              class="card__heart"
+              aria-label="Ajouter le délice des sens aux favoris"
+              aria-pressed="false">
+              <svg
+                aria-hidden="true"
+                class="card__heart-icon card__heart-icon--empty"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
+              </svg>
+              <svg
+                class="card__heart-icon card__heart-icon--filled"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640">
+                <path
+                  fill="url(#heartGradient)"
+                  d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+              </svg>
+            </button>
+          </article>
         </div>
       </section>
     </main>
