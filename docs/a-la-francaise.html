@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>À la française - OhMyFood</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body class="menu__body">
+    <header class="header">
+      <nav class="header__navigation" aria-label="Liens à l'accueil">
+        <a href="index.html"
+          ><svg
+            class="header__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640">
+            <path
+              fill="rgb(0, 0, 0)"
+              d="M41.4 297.4C28.9 309.9 28.9 330.2 41.4 342.7L169.4 470.7C181.9 483.2 202.2 483.2 214.7 470.7C227.2 458.2 227.2 437.9 214.7 425.4L141.3 352L576 352C593.7 352 608 337.7 608 320C608 302.3 593.7 288 576 288L141.3 288L214.7 214.6C227.2 202.1 227.2 181.8 214.7 169.3C202.2 156.8 181.9 156.8 169.4 169.3L41.4 297.3z" />
+          </svg>
+        </a>
+      </nav>
+      <span class="header__brand-logo">ohmyfood</span>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          class="hero__img"
+          src="assets/a-la-francaise.jpg"
+          alt="assiette et café du restaurant à la française" />
+      </section>
+      <section class="menu">
+        <div class="menu__header">
+          <h1 class="menu__title">À la française</h1>
+          <button
+            class="menu__heart"
+            aria-label="Ajouter à la française aux favoris">
+            <svg
+              aria-hidden="true"
+              class="menu__heart-icon menu__heart-icon--empty"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640">
+              <path
+                d="M442.9 144C415.6 144 389.9 157.1 373.9 179.2L339.5 226.8C335 233 327.8 236.7 320.1 236.7C312.4 236.7 305.2 233 300.7 226.8L266.3 179.2C250.3 157.1 224.6 144 197.3 144C150.3 144 112.2 182.1 112.2 229.1C112.2 279 144.2 327.5 180.3 371.4C221.4 421.4 271.7 465.4 306.2 491.7C309.4 494.1 314.1 495.9 320.2 495.9C326.3 495.9 331 494.1 334.2 491.7C368.7 465.4 419 421.3 460.1 371.4C496.3 327.5 528.2 279 528.2 229.1C528.2 182.1 490.1 144 443.1 144zM335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1C576 297.7 533.1 358 496.9 401.9C452.8 455.5 399.6 502 363.1 529.8C350.8 539.2 335.6 543.9 320 543.9C304.4 543.9 289.2 539.2 276.9 529.8C240.4 502 187.2 455.5 143.1 402C106.9 358.1 64 297.7 64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1L320 171.8L335 151.1z" />
+            </svg>
+            <svg
+              class="menu__heart-icon menu__heart-icon--filled"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640">
+              <defs>
+                <linearGradient
+                  id="heartGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="0%"
+                  y2="100%">
+                  <stop offset="0%" stop-color="#9356dc" />
+                  <stop offset="100%" stop-color="#ff79da" />
+                </linearGradient>
+              </defs>
+
+              <path
+                fill="url(#heartGradient)"
+                d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z" />
+            </svg>
+          </button>
+        </div>
+        <div class="menu__sections">
+          <section class="menu__section">
+            <header class="menu__category">
+              <h2 class="menu__category-name">ENTRÉES</h2>
+              <div class="menu__category-underline"></div>
+            </header>
+
+            <ul class="menu__items">
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Tartare de pouple acidulé</h3>
+                    <p class="menu__item-description">Aux Zests d'orange</p>
+                  </div>
+                  <span class="menu__item-price">25€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Velouté de légumes d'antan</h3>
+                    <p class="menu__item-description">
+                      Carotte, panais, topinambour
+                    </p>
+                  </div>
+                  <span class="menu__item-price">35€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Soupe à l'oignon</h3>
+                    <p class="menu__item-description">Revisitée</p>
+                  </div>
+                  <span class="menu__item-price">20€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="menu__section">
+            <header class="menu__category">
+              <h2 class="menu__category-name">PLATS</h2>
+              <div class="menu__category-underline"></div>
+            </header>
+
+            <ul class="menu__items">
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Coquilles Saint-Jacques</h3>
+                    <p class="menu__item-description">
+                      Accompagnées d'une purée de panais
+                    </p>
+                  </div>
+                  <span class="menu__item-price">40€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Margret de canard</h3>
+                    <p class="menu__item-description">
+                      Et parmentier de pommes de terres
+                    </p>
+                  </div>
+                  <span class="menu__item-price">35€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">
+                      Pigeonneau d'Ille-et-Vilaine
+                    </h3>
+                    <p class="menu__item-description">
+                      Sur son lit de gnocchis aux légumes
+                    </p>
+                  </div>
+                  <span class="menu__item-price">44€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="menu__section">
+            <header class="menu__category">
+              <h2 class="menu__category-name">DESSERTS</h2>
+              <div class="menu__category-underline"></div>
+            </header>
+            <ul class="menu__items">
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Pétales de violetes glacés</h3>
+                    <p class="menu__item-description">Et purée de noisettes</p>
+                  </div>
+                  <span class="menu__item-price">18€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Fondant au chocolat</h3>
+                    <p class="menu__item-description">Revisité</p>
+                  </div>
+                  <span class="menu__item-price">22€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+              <li class="menu__item">
+                <div class="menu__item-wrapper">
+                  <div class="menu__text">
+                    <h3 class="menu__item-name">Millefeuille croustillant</h3>
+                    <p class="menu__item-description">
+                      Myrtilles et pâte d'amande
+                    </p>
+                  </div>
+                  <span class="menu__item-price">23€</span>
+                </div>
+                <div class="menu__validation-tick">
+                  <svg
+                    class="menu__validation-tick-icon"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640">
+                    <path
+                      fill="rgb(255, 255, 255)"
+                      d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM438 209.7C427.3 201.9 412.3 204.3 404.5 215L285.1 379.2L233 327.1C223.6 317.7 208.4 317.7 199.1 327.1C189.8 336.5 189.7 351.7 199.1 361L271.1 433C276.1 438 282.9 440.5 289.9 440C296.9 439.5 303.3 435.9 307.4 430.2L443.3 243.2C451.1 232.5 448.7 217.5 438 209.7z" />
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="menu__order">
+          <button class="menu__order-btn">Commander</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <h2 class="footer__title">ohmyfood</h2>
+        <nav class="footer__nav" aria-label="Liens du pied de page">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__box footer__link">
+                <svg
+                  aria-hidden="true"
+                  class="footer__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640">
+                  <path
+                    fill="rgb(255, 255, 255)"
+                    d="M127.9 78.4C127.1 70.2 120.2 64 112 64C103.8 64 96.9 70.2 96 78.3L81.9 213.7C80.6 219.7 80 225.8 80 231.9C80 277.8 115.1 315.5 160 319.6L160 544C160 561.7 174.3 576 192 576C209.7 576 224 561.7 224 544L224 319.6C268.9 315.5 304 277.8 304 231.9C304 225.8 303.4 219.7 302.1 213.7L287.9 78.3C287.1 70.2 280.2 64 272 64C263.8 64 256.9 70.2 256.1 78.4L242.5 213.9C241.9 219.6 237.1 224 231.4 224C225.6 224 220.8 219.6 220.2 213.8L207.9 78.6C207.2 70.3 200.3 64 192 64C183.7 64 176.8 70.3 176.1 78.6L163.8 213.8C163.3 219.6 158.4 224 152.6 224C146.8 224 142 219.6 141.5 213.9L127.9 78.4zM512 64C496 64 384 96 384 240L384 352C384 387.3 412.7 416 448 416L480 416L480 544C480 561.7 494.3 576 512 576C529.7 576 544 561.7 544 544L544 96C544 78.3 529.7 64 512 64z" />
+                </svg>
+                Proposer un restaurant
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__box footer__link">
+                <svg
+                  class="footer__icon"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640">
+                  <path
+                    fill="rgb(255, 255, 255)"
+                    d="M300.9 117.2L184.3 246.8C179.7 251.9 179.9 259.8 184.8 264.7C215.3 295.2 264.8 295.2 295.3 264.7L327.1 232.9C331.3 228.7 336.6 226.4 342 226C348.8 225.4 355.8 227.7 361 232.9L537.6 408L608 352L608 64L496 128L472.2 112.1C456.4 101.6 437.9 96 418.9 96L348.5 96C347.4 96 346.2 96 345.1 96.1C328.2 97 312.3 104.6 300.9 117.2zM148.6 214.7L255.4 96L215.8 96C190.3 96 165.9 106.1 147.9 124.1L32 256L32 608L176 472L188.4 482.3C211.4 501.5 240.4 512 270.3 512L286 512L279 505C269.6 495.6 269.6 480.4 279 471.1C288.4 461.8 303.6 461.7 312.9 471.1L353.9 512.1L362.9 512.1C382 512.1 400.7 507.8 417.7 499.8L391 473C381.6 463.6 381.6 448.4 391 439.1C400.4 429.8 415.6 429.7 424.9 439.1L456.9 471.1L474.4 453.6C483.3 444.7 485.9 431.8 482 420.5L344.1 283.7L329.2 298.6C279.9 347.9 200.1 347.9 150.8 298.6C127.8 275.6 126.9 238.7 148.6 214.6z" />
+                </svg>
+                Devenir partenaire
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Mentions légales</a>
+            </li>
+            <li class="footer__item">
+              <a href="mailto:contact@ohmyfood.com" class="footer__link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
