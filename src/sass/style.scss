@@ -434,7 +434,7 @@ p {
   &__sections {
     @media (min-width: $wideScreen) {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 30px;
       align-items: start;
       padding: 0 20px;
