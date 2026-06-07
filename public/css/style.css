@@ -225,6 +225,7 @@ p {
   width: 30px;
   height: 30px;
 }
+
 .restaurants {
   background-color: #f5f5f5;
   display: flex;
@@ -248,6 +249,12 @@ p {
   .restaurants__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1600px) {
+  .restaurants__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -372,6 +379,11 @@ p {
 .menu__title {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.6em;
+}
+@media (min-width: 900px) {
+  .menu__title {
+    margin-left: 20px;
+  }
 }
 @media (min-width: 900px) {
   .menu__sections {

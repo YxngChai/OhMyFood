@@ -15,6 +15,9 @@ $color-grey: #e7e7e7;
 $color-darkgrey: #2f2f2f;
 $color-black: #111111;
 
+$wideScreen: 900px;
+$ultrawideScreen: 1600px;
+
 @mixin icon {
   width: 20px;
   height: 20px;
@@ -219,7 +222,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 35px;
-    @media (min-width: 900px) {
+    @media (min-width: $wideScreen) {
       flex-direction: row;
       justify-content: space-between;
       gap: 50px;
@@ -267,8 +270,6 @@ p {
     width: 30px;
     height: 30px;
   }
-  &__text {
-  }
 }
 .restaurants {
   background-color: $color-darkwhite;
@@ -288,9 +289,13 @@ p {
     padding: 0 30px;
     gap: 30px;
     margin-bottom: 80px;
-    @media (min-width: 900px) {
+    @media (min-width: $wideScreen) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $ultrawideScreen) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 }
@@ -305,7 +310,7 @@ p {
   position: relative;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba($color-darkgrey, 0.2);
-  @media (min-width: 900px) {
+  @media (min-width: $wideScreen) {
     max-width: none;
   }
 
@@ -420,9 +425,12 @@ p {
   &__title {
     font-family: $logo-font;
     font-size: 1.6em;
+    @media (min-width: $wideScreen) {
+      margin-left: 20px;
+    }
   }
   &__sections {
-    @media (min-width: 900px) {
+    @media (min-width: $wideScreen) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
